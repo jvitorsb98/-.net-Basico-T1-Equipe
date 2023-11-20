@@ -71,7 +71,7 @@ class Program
         Console.Write("Digite a data de vencimento (dd/mm/yyyy): ");
         string? dataVencimentoInput = Console.ReadLine();
 
-        if (titulo!= null && descricao!=null && dataVencimentoInput!=null && DateTime.TryParseExact(dataVencimentoInput, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime dataVencimento))
+        if (titulo!= null && descricao!=null && dataVencimentoInput!=null && DateTime.TryParseExact(dataVencimentoInput, "dd/MM/yyyy", CultureInfo.InvariantCulture, out DateTime dataVencimento))
         {
             Tarefa novaTarefa = new Tarefa(titulo, descricao, dataVencimento);
             listaTarefas.Add(novaTarefa);
