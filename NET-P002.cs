@@ -196,8 +196,8 @@ class GerenciadorTarefas {
             
             Console.WriteLine($"Numero de tarefas concluidas: {tarefasConcluidas}");
             Console.WriteLine($"Numero de tarefas pendentes: {tarefasPendentes}");
-            Console.WriteLine($"Tarefa mais antiga: {tarefaAntiga.titulo}");
-            Console.WriteLine($"Tarefa mais nova: {tarefaNova.titulo}");
+            Console.WriteLine($"Tarefa com data de vencimento mais proxima: {tarefaAntiga.titulo}");
+            Console.WriteLine($"Tarefa com data de vencimento mais distante: {tarefaNova.titulo}");
         }else{
             Console.WriteLine("Nao ha tarefas!");
         }
